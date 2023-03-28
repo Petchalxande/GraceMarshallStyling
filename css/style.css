@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #808080;
+    background: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: #808080;
+}
+
+a:hover {
+    color: #333333;
+}
+
+#primary-nav {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 0;
+    padding: 0;
+}
+
+#primary-nav ul {
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+#site-header {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+}
+
+.navbar-link {
+    margin: auto 0 auto 50px;
+}
+
+@media (max-width: 576px){
+    #primary-nav {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #primary-nav ul {
+        justify-content: center;
+    }
+
+    .navbar-link {
+        margin: 0 25px;
+    }
+}
+
+
+/* Images & Portfolio */
+
+#filter-buttons {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.filter-button {
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+    /* border: 1px solid #808080; */
+    border: none;
+    background: #f4f4f4;
+    color: #808080;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10px;
+    margin: 0 7px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-button:hover {
+    background: #bababa;
+    color: white; 
+}
+
+.toggled-on {
+    background: #bababa;
+    color: white; 
+}
+
+.gallery-image {
+    margin-bottom: 24px;
+}
+
+.gallery-image img {
+    object-fit: cover;
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+
+.opacity-25 {
+    opacity: 25%;
+    transition: opacity 0.5s ease !important;
+}
+
+.opacity-100 {
+    opacity: 100%;
+    transition: opacity 0.5s ease !important;
+}
+
+/* About & Contact */
+
+.contact {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.contact-email {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.social-media-icon {
+    fill: #808080;
+    width: 25px;
+    height: 25px;
+    margin: 0 9px;
+}
+
+.social-media-icon:hover {
+    fill: #333333;
+}
+
+/* Footer */
+
+#main-footer {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #808080;
+    margin: 150px 0 50px 0;
+
+}
